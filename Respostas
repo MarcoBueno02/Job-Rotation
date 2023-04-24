@@ -9,6 +9,8 @@ Ao final do processamento, a função imprimir irá exibir o valor de SOMA, que 
 
 2) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
 
+programa em Python:
+
 numero = int(input("Informe um número: "))
 
 # Inicia a sequência com 0 e 1
@@ -25,3 +27,33 @@ if numero in fibonacci:
     print("O número", numero, "pertence à sequência de Fibonacci.")
 else:
     print("O número", numero, "não pertence à sequência de Fibonacci.")
+
+3)Descubra a lógica e complete o próximo elemento:
+a) 9 (a sequência é formada pelos números ímpares consecutivos)
+b) 128 (a sequência é formada pelos números pares multiplicados por 2)
+c) 49 (a sequência é formada pelos números ímpares consecutivos ao quadrado)
+d) 100 (a sequência é formada pelos quadrados dos números pares consecutivos)
+e) 13 (a sequência é formada pela soma dos dois números anteriores)
+f) 20 (a sequência é formada pelos números que possuem a letra "e" em sua grafia)
+
+4)Dois veículos (um carro e um caminhão) saem respectivamente de cidades opostas pela mesma rodovia. O carro de Ribeirão Preto em direção a Franca, a uma velocidade constante de 110 km/h e o caminhão de Franca em direção a Ribeirão Preto a uma velocidade constante de 80 km/h. Quando eles se cruzarem na rodovia, qual estará mais próximo a cidade de Ribeirão Preto?
+
+O carro, que está em Ribeirão Preto, percorrerá a distância de 50km até o ponto de encontro (metade do caminho entre as duas cidades), já que ele está se deslocando em direção a Franca a uma velocidade de 110km/h.
+
+Já o caminhão, que está em Franca, também percorrerá a distância de 50km até o ponto de encontro, mas levará mais tempo devido aos pedágios. Como ele leva 5 minutos extras em cada pedágio, isso significa que ele gastará 10 minutos extras no total. Considerando que a velocidade do caminhão é de 80km/h, podemos calcular que ele percorrerá a distância de 50km em aproximadamente 37,5 minutos (50/8060), enquanto o carro levará cerca de 27,3 minutos (50/11060). Somando os 10 minutos extras que o caminhão gastará nos pedágios, chegamos a um total de 47,5 minutos.
+
+Portanto, quando os veículos se cruzarem, o caminhão estará mais próximo de Ribeirão Preto, já que ele percorreu uma distância menor em um tempo maior do que o carro.
+
+5)Escreva um programa que inverta os caracteres de um string.
+
+Código em Python:
+
+string = input("Digite uma string: ")
+string_invertida = ""
+
+for i in range(len(string)-1, -1, -1):
+    string_invertida += string[i]
+
+print("String invertida: ", string_invertida)
+
+
