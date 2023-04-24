@@ -1,0 +1,27 @@
+1) Observe o trecho de código abaixo:
+A variável INDICE é iniciada com o valor 13, a variável SOMA é iniciada com o valor 0 e a variável K é iniciada com o valor 0.
+
+Enquanto K for menor que INDICE, o bloco de código dentro do laço de repetição será executado. Dentro do bloco, o valor de K é incrementado em 1 a cada iteração e somado à variável SOMA.
+
+Dessa forma, a primeira iteração soma 1 à SOMA, a segunda soma 2, a terceira soma 3, e assim por diante, até a última iteração, em que K será igual a 13 e SOMA será igual a 1 + 2 + 3 + ... + 12 + 13, que resulta em 91.
+
+Ao final do processamento, a função imprimir irá exibir o valor de SOMA, que será 91.
+
+2) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
+
+numero = int(input("Informe um número: "))
+
+# Inicia a sequência com 0 e 1
+fibonacci = [0, 1]
+
+# Calcula os valores da sequência até que o último valor seja maior ou igual ao número informado
+while fibonacci[-1] < numero:
+    # Calcula o próximo valor da sequência como a soma dos dois valores anteriores
+    proximo_valor = fibonacci[-1] + fibonacci[-2]
+    fibonacci.append(proximo_valor)
+
+# Verifica se o número informado pertence à sequência
+if numero in fibonacci:
+    print("O número", numero, "pertence à sequência de Fibonacci.")
+else:
+    print("O número", numero, "não pertence à sequência de Fibonacci.")
